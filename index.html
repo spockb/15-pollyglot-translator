@@ -25,7 +25,7 @@
     </section>
 
     <main id="main">
-      <form id="translate-form" action="">
+      <!-- <form id="translate-form" action="">
         <label class="main-label" for="input-text">Text to Translate 👇</label>
         <textarea
           id="input-text"
@@ -50,33 +50,14 @@
           <img class="flag" src="./assets/jpn-flag.png" />
         </span>
         <input type="submit" value="Translate" class="button" />
-      </form>
+      </form> -->
 
-      <div id="translation-div" class="translation-div">
-        <p class="main-label" for="input-text">Text to Translate 👇</p>
-        <textarea
-          id="input-text"
-          class="text"
-          form_id="translate-form"
-          placeholder="How are you?"
-        ></textarea>
-        <label for="language" class="main-label">Select language 👇</label>
-        <span class="radio-container">
-          <input type="radio" name="language" id="french" class="radio" />
-          <label for="french">French</label>
-          <img class="flag" src="./assets/fr-flag.png" />
-        </span>
-        <span class="radio-container">
-          <input type="radio" name="language" id="spanish" class="radio" />
-          <label for="spanish">Spanish</label>
-          <img class="flag" src="./assets/sp-flag.png" />
-        </span>
-        <span class="radio-container">
-          <input type="radio" name="language" id="japanese" class="radio" />
-          <label for="japanese">Japanese</label>
-          <img class="flag" src="./assets/jpn-flag.png" />
-        </span>
-        <input type="submit" value="Translate" class="button" />
+      <div id="translated-div" class="translated-div">
+        <p class="main-label">Original text 👇</p>
+        <p class="text-top">How are you?</p>
+        <p class="main-label">Your translation 👇</p>
+        <p class="text-bottom">How are you?</p>
+        <button class="button">Start Over</button>
       </div>
     </main>
 
