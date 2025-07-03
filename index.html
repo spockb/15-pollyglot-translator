@@ -24,7 +24,7 @@
       </div>
     </section>
 
-    <main>
+    <main id="main">
       <form id="translate-form" action="">
         <label class="main-label" for="input-text">Text to Translate 👇</label>
         <textarea
@@ -51,6 +51,33 @@
         </span>
         <input type="submit" value="Translate" class="button" />
       </form>
+
+      <div id="translation-div" class="translation-div">
+        <p class="main-label" for="input-text">Text to Translate 👇</p>
+        <textarea
+          id="input-text"
+          class="text"
+          form_id="translate-form"
+          placeholder="How are you?"
+        ></textarea>
+        <label for="language" class="main-label">Select language 👇</label>
+        <span class="radio-container">
+          <input type="radio" name="language" id="french" class="radio" />
+          <label for="french">French</label>
+          <img class="flag" src="./assets/fr-flag.png" />
+        </span>
+        <span class="radio-container">
+          <input type="radio" name="language" id="spanish" class="radio" />
+          <label for="spanish">Spanish</label>
+          <img class="flag" src="./assets/sp-flag.png" />
+        </span>
+        <span class="radio-container">
+          <input type="radio" name="language" id="japanese" class="radio" />
+          <label for="japanese">Japanese</label>
+          <img class="flag" src="./assets/jpn-flag.png" />
+        </span>
+        <input type="submit" value="Translate" class="button" />
+      </div>
     </main>
 
     <script src="index.js" type="module"></script>
