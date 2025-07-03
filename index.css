@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  width: 100vw;
+  .bg {
+    background-image: url(./assets/worldmap.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+
+    img {
+      width: 8rem;
+      height: 100%;
+    }
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+
+    .title {
+      font-family: "Big Shoulders", sans-serif;
+      color: #32cd32;
+      font-size: 3rem;
+      font-weight: 800;
+      margin: 0;
+    }
+
+    .subtitle {
+      font-family: "Poppins", sans-serif;
+      color: white;
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 0;
+    }
+  }
+}
+
+main {
+  border: 0.25rem solid #252f42;
+  border-radius: 1rem;
+  margin: 2rem 1rem;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    font-family: "Poppins", sans-serif;
+
+    .main-label {
+      font-size: 1.25rem;
+      color: #035a9d;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .text {
+      border: none;
+      border-radius: 0.5rem;
+      background-color: #eff0f4;
+      padding: 0.75rem;
+      margin-bottom: 1.5rem;
+      height: 10rem;
+      font-family: inherit;
+      font-size: 1.25rem;
+      font-weight: 600;
+      resize: none;
+    }
+    .radio-container {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-left: 3rem;
+    }
+
+    label {
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+    .radio {
+      float: left;
+    }
+
+    .radio:checked {
+      border: none;
+    }
+
+    .flag {
+      border: 2px solid gray;
+      width: 2rem;
+      height: 1.375rem;
+    }
+
+    .button {
+      border: none;
+      border-radius: 0.375rem;
+      font-family: inherit;
+      font-size: 1.5rem;
+      font-weight: 700;
+      padding: 1rem 0;
+      color: white;
+      background-color: #035a9d;
+      margin: 3rem 0;
+    }
+  }
+}
