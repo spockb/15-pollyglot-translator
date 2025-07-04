@@ -13,7 +13,7 @@ app.use(express.static("public"));
 app.use(express.json());
 
 app.post("/api/translate", async (req, res) => {
-  const { text, targetLanguage } = req.body;
+  const { text, language } = req.body;
 
   try {
     const completion = await openai.chat.completions.create({
@@ -21,7 +21,7 @@ app.post("/api/translate", async (req, res) => {
       messages: [
         {
           role: "system",
-          content: `Translate into ${targetLanguage}.`,
+          content: `Translate into ${language}.`,
         },
         {
           role: "user",
